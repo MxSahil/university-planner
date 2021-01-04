@@ -16,7 +16,7 @@ const Navbar = () => {
                 <NavbarContainer>
                     <NavLogo to='/'>MyBudget</NavLogo>
                     <MobileIcon>
-                        <faBars />
+                        <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
