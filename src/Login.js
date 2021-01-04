@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import GoogleLogin from 'react-google-login';
 import { Redirect } from 'react-router-dom';
-import axios from 'axios'
 
 export class Login extends Component {
   constructor(props) {
