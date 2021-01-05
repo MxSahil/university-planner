@@ -14,13 +14,13 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>MyBudget</NavLogo>
+                    <NavLogo to='/Dashboard'>MyBudget</NavLogo>
                     <MobileIcon>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='Home'>Home</NavLinks>
+                            <NavLinks to='Dashboard'>Home</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='about'>Build Budget</NavLinks>

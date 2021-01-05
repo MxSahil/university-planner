@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import GoogleLogin from 'react-google-login';
 import { Redirect } from 'react-router-dom';
+import './Login.css'
 
 export class Login extends Component {
   constructor(props) {
@@ -34,19 +35,18 @@ export class Login extends Component {
     return (
       <div className="App">
         <div className="row">
-          <div className="col-sm-12 btn btn-info">
-            Login With Google Using ReactJS
-            </div>
-        </div>
-        <div className="row">
           <div style={{ 'paddingTop': "20px" }} className="col-sm-12">
             <div className="col-sm-4"></div>
             <div className="col-sm-4">
+              <h1 className="title">MyBudget</h1>
+              <h3>A Budget Tracker for University Students + More.</h3>
               <GoogleLogin
+                className="loginButton"
                 clientId="914281278319-drid0o7d00v1vu9pjeq8pm4rip9cg2bl.apps.googleusercontent.com"
-                buttonText="Login with Google"
                 onSuccess={responseGoogle}
-                onFailure={responseGoogle} ></GoogleLogin>
+                onFailure={responseGoogle} >
+                    <strong className="gmailTitle">Sign In with Gmail</strong>
+                </GoogleLogin>
             </div>
             <div className="col-sm-4"></div>
           </div>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import NavBar from './Kunal/Navbar'; 
-import Sidebar from './components/Sidebar/index.js';
 
 export class Dashboard extends Component {
     constructor(props){
@@ -21,7 +20,6 @@ export class Dashboard extends Component {
         return (
             <div className="container">   
             <NavBar />
-            <Sidebar />
                 <div className="row">  
                     <div className="col-sm-12 btn btn-info">  
                         Welcome to Dashboard
