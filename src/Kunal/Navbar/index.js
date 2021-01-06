@@ -19,7 +19,6 @@ export class Navbar extends Component {
     componentDidMount() {
         const data = JSON.parse(localStorage.getItem('userData'));
         let data1=data;
-        console.log(data1.Name);
         this.setState({name: data1.Name})
     };
 

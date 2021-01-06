@@ -12,8 +12,8 @@ export class Dashboard extends Component {
   componentDidMount() {
         const data = JSON.parse(localStorage.getItem('userData'));
         let data1=data;  
-        console.log(data1.Name);
-        this.setState({name: data1.Name})
+        console.log(data1.name);
+        this.setState({name: data1.name})
       }
 
     render() {

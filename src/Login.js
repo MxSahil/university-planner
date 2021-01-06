@@ -14,7 +14,7 @@ export class Login extends Component {
 
   signupGoogle(res) {
     const googleresponse = {
-      Name: res.profileObj.name,
+      name: res.profileObj.name,
       email: res.profileObj.email,
       token: res.googleId,
       Image: res.profileObj.imageUrl,
@@ -35,8 +35,15 @@ export class Login extends Component {
 
     const authHandler = (err, data) => {
       console.log(err, data);
+      const microsoftData = {
+        name: data.account.name,
+        email: data.account.userName,
+        token: data.accessToken,
+        ProviderId: 'Microsoft'
+      };
+      const json = JSON.stringify(microsoftData);
+      localStorage.setItem("userData", json);
       this.props.history.push('/Dashboard');
-      debugger;
     };
 
     return (
@@ -55,6 +62,7 @@ export class Login extends Component {
                     <strong className="emailTitle">Sign In with Gmail</strong>
               </GoogleLogin>
               <MicrosoftLogin 
+                className="microsoftTitle"
                 clientId="8b86a033-486a-4d29-9500-52ee5855ef31"
                 authCallback={authHandler}/>
             </div>
