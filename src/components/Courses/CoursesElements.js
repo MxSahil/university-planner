@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const CoursesTilesCont = styled.div`
+export const CourseTilesCont = styled.div`
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
