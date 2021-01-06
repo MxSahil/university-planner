@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import GoogleLogin from 'react-google-login';
+import MicrosoftLogin from 'react-microsoft-login';
 import { Redirect } from 'react-router-dom';
 import './Login.css'
 
@@ -11,7 +12,7 @@ export class Login extends Component {
     };
   }
 
-  signup(res) {
+  signupGoogle(res) {
     const googleresponse = {
       Name: res.profileObj.name,
       email: res.profileObj.email,
@@ -29,8 +30,14 @@ export class Login extends Component {
       console.log(response);
       var res = response.profileObj;
       console.log(res);
-      this.signup(response);
+      this.signupGoogle(response);
     }
+
+    const authHandler = (err, data) => {
+      console.log(err, data);
+      this.props.history.push('/Dashboard');
+      debugger;
+    };
 
     return (
       <div className="App">
@@ -45,8 +52,11 @@ export class Login extends Component {
                 clientId="914281278319-drid0o7d00v1vu9pjeq8pm4rip9cg2bl.apps.googleusercontent.com"
                 onSuccess={responseGoogle}
                 onFailure={responseGoogle} >
-                    <strong className="gmailTitle">Sign In with Gmail</strong>
-                </GoogleLogin>
+                    <strong className="emailTitle">Sign In with Gmail</strong>
+              </GoogleLogin>
+              <MicrosoftLogin 
+                clientId="8b86a033-486a-4d29-9500-52ee5855ef31"
+                authCallback={authHandler}/>
             </div>
             <div className="col-sm-4"></div>
           </div>

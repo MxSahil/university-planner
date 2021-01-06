@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {FaBars} from 'react-icons/fa'
 import {Nav, 
         NavbarContainer, 
@@ -9,9 +9,23 @@ import {Nav,
         NavLinks 
     } from  './NavbarElements';
 
-const Navbar = () => {
-    return (
-        <>
+export class Navbar extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+        name:'',
+        };
+    }
+
+    componentDidMount() {
+        const data = JSON.parse(localStorage.getItem('userData'));
+        let data1=data;  
+        console.log(data1.Name);
+        this.setState({name: data1.Name})
+      };
+
+      render(){
+        return (
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/Dashboard'>MyBudget</NavLogo>
@@ -23,23 +37,26 @@ const Navbar = () => {
                             <NavLinks to='Dashboard'>Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about'>Build Budget</NavLinks>
+                            <NavLinks to='BuildBudget'>Build Budget</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about'>Check Budget</NavLinks>
+                            <NavLinks to='CheckBudget'>Check Budget</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about'>Courses</NavLinks>
+                            <NavLinks to='Courses'>Courses</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about'>Sign Out</NavLinks>
+                            <NavLinks to='/Dashboard'>{this.state.name}</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to='Sign Out'>Sign Out</NavLinks>
                         </NavItem>
                     </NavMenu>
             
                 </NavbarContainer>
             </Nav>
-        </>
-    );
+        )
+    }
 };
 
-export default Navbar;
+export default Navbar
