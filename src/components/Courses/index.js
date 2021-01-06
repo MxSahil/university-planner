@@ -1,20 +1,17 @@
 import React from 'react';
-import {CourseTilesCont, CourseTile}
+import {CourseTilesCont, CourseTile} from './CoursesElements.js';
 
 const Courses = () => {
   return (
-    // <CoursePage>
-      // <CoursePageTitle>
-      //
-      // </CoursePageTitle>
 
-      <CoursesTilesCont>
+      <>
+      <CourseTilesCont>
         <CourseTile>Classes Today</CourseTile>
         <CourseTile>Calendar</CourseTile>
         <CourseTile>GPA Calculator</CourseTile>
         <CourseTile>Grade Calculator</CourseTile>
-      </CoursesTilesCont>
-    // </CoursePage>
+      </CourseTilesCont>
+      </>
 
   );
 
