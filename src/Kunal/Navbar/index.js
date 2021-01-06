@@ -16,11 +16,15 @@ export class Navbar extends Component {
         name:'',
         };
     }
+    
     componentDidMount() {
         const data = JSON.parse(localStorage.getItem('userData'));
-        let data1=data;
-        this.setState({name: data1.Name})
-    };
+        let data1=data;  
+        console.log(data1.name);
+        this.setState({ name: data1.name }, () => {
+            console.log(data1.name);
+          });
+    }
 
     render(){
         return (
