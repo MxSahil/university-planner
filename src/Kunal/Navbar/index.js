@@ -23,16 +23,16 @@ const Navbar = () => {
                             <NavLinks to='Dashboard'>Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about'>Build Budget</NavLinks>
+                            <NavLinks to='BuildBudget'>Build Budget</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about'>Check Budget</NavLinks>
+                            <NavLinks to='CheckBudget'>Check Budget</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about'>Courses</NavLinks>
+                            <NavLinks to='Courses'>Courses</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about'>Sign Out</NavLinks>
+                            <NavLinks to='Sign Out'>Sign Out</NavLinks>
                         </NavItem>
                     </NavMenu>
             
