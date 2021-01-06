@@ -3,7 +3,6 @@ import {CourseTilesCont, CourseTile} from './CoursesElements.js';
 
 const Courses = () => {
   return (
-
       <>
       <CourseTilesCont>
         <CourseTile>Classes Today</CourseTile>
@@ -12,7 +11,6 @@ const Courses = () => {
         <CourseTile>Grade Calculator</CourseTile>
       </CourseTilesCont>
       </>
-
   );
 
 };
