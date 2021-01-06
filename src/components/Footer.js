@@ -1,62 +1,51 @@
 import React from 'react'
-import './Footer.css';
-
-function Footer() {
+import "./Footer.css"
+const Footer =() => {
     return (
-        <div className= 'footer-container'>
-            <section className="footer-subscription">
-                <p className="footer-subscription-heading">
-                    Join the way of the jedi 
-                </p>
-                <p className="footer-subscription-text">
-                    You can unsubscirbe at any time
-                </p>
-                <div className="iput-areas">
-                    <form>
-                        <input type="email" name="email" placeholder="Your Email" className="footer-input"/>
-                        <Button buttonStyle='btn--outline'>Subscribe</Button>
-                    </form>
-                </div>    
-            </section>
-            <div className="footer-links">
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
-                        <h2>About US </h2>
-                        <Link to='/sign-up'>How it Works</Link> 
-                        <link to='/'>test</link>
-                        <link to='/'>test 2</link>
-                        <link to='/'>test 3</link>
-                        <link to='/'>test 4</link>
+        <div className ="main-footer">
+            <div className="container">
+                <div className="row">
+                    {/* column1 */}
+                    <div className="col">
+                        <h4> Contact Us</h4>
+                        <ul className="list-unstyled">
+                            <li>289-821-1981</li>
+                            <li>Toronto, ON</li>
+                            <li>30 banks Dr</li>
+                        </ul>
                     </div>
-                    <div className="footer-link-items">
-                        <h2>About US </h2>
-                        <Link to='/sign-up'>How it Works</Link> 
-                        <link to='/'>test</link>
-                        <link to='/'>test 2</link>
-                        <link to='/'>test 3</link>
-                        <link to='/'>test 4</link>
+                    {/* column2 */}
+                    <div className="ccl">
+                        <h4>Links</h4>
+                        <ul classname="list-unstyled">
+                            <li>289-821-1981</li>
+                            <li>Toronto, ON</li>
+                            <li>30 banks Dr</li>
+                        </ul>
                     </div>
-                    <div className="footer-link-items">
-                        <h2>About US </h2>
-                        <Link to='/sign-up'>How it Works</Link> 
-                        <link to='/'>test</link>
-                        <link to='/'>test 2</link>
-                        <link to='/'>test 3</link>
-                        <link to='/'>test 4</link>
-                    </div>
-                    <div className="footer-link-items">
-                        <h2>About US </h2>
-                        <Link to='/sign-up'>How it Works</Link> 
-                        <link to='/'>test</link>
-                        <link to='/'>test 2</link>
-                        <link to='/'>test 3</link>
-                        <link to='/'>test 4</link>
+                    {/* column3 */}
+                    <div className="ccl">
+                        <h4>Learn More</h4>
+                        <ul classname="list-unstyled">
+                            <li>289-821-1981</li>
+                            <li>Toronto, ON</li>
+                            <li>30 banks Dr</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+                <hr />
+                <div className="row">
+                    <p className="col-sm">
+                        &copy; {new Date().getFullYear()} MyBudget | All Rights Reserved | Terms of Service | Privacy 
+
+                    </p>
+
+                </div>
+
+            </div> 
+            <h1>MyBudget</h1>
         </div>
-    );
+    )
 }
 
-export default Footer;
-
+export default Footer
