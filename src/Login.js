@@ -33,12 +33,10 @@ export class Login extends Component {
       this.signupGoogle(response);
     }
 
-    const responseMicrosoft = (response) => {
-      console.log(response);
-    };
-
     const authHandler = (err, data) => {
       console.log(err, data);
+      this.props.history.push('/Dashboard');
+      debugger;
     };
 
     return (
@@ -58,8 +56,7 @@ export class Login extends Component {
               </GoogleLogin>
               <MicrosoftLogin 
                 clientId="8b86a033-486a-4d29-9500-52ee5855ef31"
-                authCallback={authHandler}
-                onClick={responseMicrosoft}/>
+                authCallback={authHandler}/>
             </div>
             <div className="col-sm-4"></div>
           </div>
