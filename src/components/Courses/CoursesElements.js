@@ -22,7 +22,11 @@ export const CourseTile = styled.div`
   padding: 2.5%;
   border: .5% solid orange;
   border-radius: 10px;
+<<<<<<< HEAD
 `;
+=======
+`
+>>>>>>> 3bfd2c6552f9eb035fc81c974a342c055414c7b1
 
 export const CourseTileTitle = styled(LinkR)`
   color: orange;
