@@ -32,4 +32,4 @@ export const CourseTileTitle = styled(LinkR)`
   text-decoration: none;
   cursor: pointer;
   display: flex;
-`
+`;

@@ -15,17 +15,4 @@ const Courses = () => {
           <CourseTileTitle to="/Classes/Calendar">Calendar</CourseTileTitle>
         </CourseTile>
 
-        <CourseTile>
-          <CourseTileTitle to="/Classes/GPACalculator">GPA Calculator</CourseTileTitle>
-        </CourseTile>
-
-        <CourseTile>
-          <CourseTileTitle to="/Classes/GradeCalculator">Grade Calculator</CourseTileTitle>
-        </CourseTile>
-      </CourseTilesCont>
-      </>
-  );
-
-};
-
 export default Courses;
