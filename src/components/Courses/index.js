@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {CourseTilesCont, CourseTile, CourseTileTitle, TodaysClassesList,
+import {CourseTilesCont, CourseTile, CourseTileTitle, TodaysClassesList, TileInfo,
         ClassListItem, ClassName, ClassInfo, CalendarButton, CalendarButtonCont}
         from './CoursesElements.js';
 
