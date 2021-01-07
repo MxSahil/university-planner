@@ -8,7 +8,7 @@ export class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      
     };
   }
 
@@ -61,10 +61,12 @@ export class Login extends Component {
                 onFailure={responseGoogle} >
                     <strong className="emailTitle">Sign In with Gmail</strong>
               </GoogleLogin>
-              <MicrosoftLogin 
-                className="microsoftTitle"
-                clientId="8b86a033-486a-4d29-9500-52ee5855ef31"
-                authCallback={authHandler}/>
+              <div class="container">
+                <MicrosoftLogin 
+                  className="microsoftTitle"
+                  clientId="8b86a033-486a-4d29-9500-52ee5855ef31"
+                  authCallback={authHandler}/>
+                </div>
             </div>
             <div className="col-sm-4"></div>
           </div>
