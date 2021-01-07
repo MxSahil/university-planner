@@ -54,6 +54,10 @@ export const ClassName = styled.h4`
   color: orange;
 `
 
+export const TileInfo = styled.h3`
+  color: orange;
+`
+
 export const ClassInfo = styled.h6`
   color: orange;
   word-spacing: 30px;
