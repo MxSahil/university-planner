@@ -24,7 +24,6 @@ export const CourseTile = styled.div`
   border-radius: 10px;
 `;
 
-
 export const CourseTileTitle = styled(LinkR)`
   color: orange;
   font-size: 30px;

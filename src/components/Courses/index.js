@@ -28,16 +28,13 @@ const Courses = () => {
            <CalendarButton>View Calendar</CalendarButton>
           </CalendarButtonCont>
         </CourseTile>
-
         <CourseTile>
           <CourseTileTitle to="Classes/Calendar">Calendar</CourseTileTitle>
           <TileInfo>View and update your calendar.</TileInfo>
         </CourseTile>
-
         <CourseTile>
           <CourseTileTitle to="Classes/AcademicHistory">Academic History</CourseTileTitle>
         </CourseTile>
-
         <CourseTile>
           <CourseTileTitle to="Classes/Calculator">Calculator</CourseTileTitle>
         </CourseTile>
