@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import GoogleLogin from 'react-google-login';
 import MicrosoftLogin from 'react-microsoft-login';
-import { Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Login.css'
 
 export class Login extends Component {
@@ -51,7 +51,6 @@ export class Login extends Component {
         <div className="row">
           <div style={{ 'paddingTop': "20px" }} className="col-sm-12">
             <div className="col-sm-4"></div>
-            <div className="col-sm-4">
               <h1 className="title">MyBudget</h1>
               <h3>A Budget Tracker for University Students + More.</h3>
               <GoogleLogin
@@ -67,8 +66,20 @@ export class Login extends Component {
                   clientId="8b86a033-486a-4d29-9500-52ee5855ef31"
                   authCallback={authHandler}/>
                 </div>
-            </div>
-            <div className="col-sm-4"></div>
+              <Link to="/signin">
+                <div class="container">
+                  <button type="button" className="btn btn-light button">
+                    <span className="buttonTitle">Login with MyBudget</span>
+                  </button>
+                </div>
+              </Link>
+              <Link to="/signup">
+                <div class="container">
+                  <button type="button" className="btn btn-light button">
+                    <span className="buttonTitle">Sign Up for MyBudget</span>
+                  </button>
+                </div>
+              </Link>
           </div>
         </div>
       </div>

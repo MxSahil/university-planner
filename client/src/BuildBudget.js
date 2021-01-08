@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import NavBar from './Kunal/Navbar'; 
-import Sidebar from './components/Sidebar/index.js';
 
 export class BuildBuget extends Component {
     constructor(props){

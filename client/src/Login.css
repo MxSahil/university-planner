@@ -45,3 +45,15 @@
     box-sizing: border-box;
     margin-top: 1rem;
 }
+
+.button {
+    margin-top: 1rem;
+    border-radius: 0;
+    width: 213.11px;
+}
+
+.buttonTitle {
+    font-family: Noto Sans, sans-serif;
+    font-stretch: expanded;
+    font-weight: 500;
+}
